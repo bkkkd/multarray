@@ -7,4 +7,5 @@
 #
 
 
+phpunit --bootstrap vendor/autoload.php  test/rowarraytest
 phpunit --bootstrap vendor/autoload.php  test/multarraytest
