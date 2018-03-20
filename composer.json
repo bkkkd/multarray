@@ -1,7 +1,7 @@
 {
 	"name": "bkkkd/multarray",
-	"type": "framework",
-	"description": "The Multidimensional arrays two-dimensional array library.",
+	"type": "library",
+	"description": "A multidimensional array export/import CSV file tool library.",
 	"keywords": ["mongo", "CSV", "Array"],
 	"homepage": "https://www.toaction.cn",
 	"license": "MIT",

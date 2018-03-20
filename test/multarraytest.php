@@ -12,29 +12,24 @@
 use PHPUnit\Framework\TestCase;
 use MultArray\MultArray;
 final class MultArrayTest extends TestCase{
-    public function testKvToMult(){
-        $kvdata = [
-            '_id'=>'123',
-            'name[first]'=>'Tim',
-            'name[last]'=>'Huang',
-
-        ];
-        $multdata = [
+    public function testMultToCsv(){
+        $data = [[
             '_id'=>'123',
             'name'=>[
                 'first'=>'Tim',
                 'last'=>'Huang',
             ]
-        ];
-        $ma = new MultArray($kvdata);
+        ]];
+        $csvfile = './test.csv';
+        $csv = MultArray::toCsv($data);
+        file_put_contents($csvfile, $csv);
+        $render_data = MultArray::fromCsv($csvfile);
+        unlink($csvfile);
+
         $this->assertEquals(
-            $multdata,
-            $ma->getMultArray($kvdata)
+            $data,
+            $render_data
         );
-        $ma = new MultArray($multdata);
-        $this->assertEquals(
-            $kvdata,
-            $ma->getKvArray()
-        );
+        
     }
 }
