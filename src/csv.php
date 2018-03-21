@@ -1,6 +1,6 @@
 <?php
 /**
- * Short description for csv.php
+ * 对csv文件转换为多条的一维数组
  *
  * @package csv
  * @author tim <tim@tim-PC>

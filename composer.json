@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "A multidimensional array export/import CSV file tool library.",
 	"keywords": ["mongo", "CSV", "Array"],
-	"homepage": "https://www.toaction.cn",
+	"homepage": "https://www.toaction.cn/",
 	"license": "MIT",
 	"support": {
 		"issues": "https://github.com/bkkkd/multarray/issues",

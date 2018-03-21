@@ -1,6 +1,6 @@
 <?php
 /**
- * Short description for multarray.php
+ * 只针对一条数据进行处理
  *
  * @package multarray
  * @author tim <tim@tim-PC>

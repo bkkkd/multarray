@@ -1,6 +1,6 @@
 <?php
 /**
- * Short description for multarray.php
+ * 最终应用的类,将csv文件导入/导出成多维数组
  *
  * @package multarray
  * @author tim <tim@tim-PC>
